@@ -1,0 +1,20 @@
+<p>Long description</p>
+{{longDescription}}
+<hr>
+
+<p>Short description</p>
+{{shortDescription}}
+<hr>
+
+<p>Default is set with 25 characters and end with ellipsis ...</p>
+{{longDescription | truncate}}
+<br>
+{{shortDescription | truncate}}
+<hr>
+
+<p>Description with 15 characters and end with ellipsis ...</p>
+{{longDescription | truncate: 15}}
+<hr>
+
+<p>Description with 15 characters and end with ellipsis **</p>
+{{longDescription | truncate: 15 : false : '**'}}
